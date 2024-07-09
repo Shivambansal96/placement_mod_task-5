@@ -26,9 +26,9 @@ const App = () => {
     }
   }
 
-    // useEffect(() => {
-    //   fetchImages();
-    // }, []);
+    useEffect(() => {
+      fetchImages();
+    }, []);
 
 
   return (
@@ -37,7 +37,7 @@ const App = () => {
         <div id="content">
 
             <div id="imageContainer">
-              <img src={images} alt="dog" />
+              <img src={images} alt="" />
             </div>
             <div id="buttonContainer">
               <button onClick={fetchImages}>Fetch Images</button>
